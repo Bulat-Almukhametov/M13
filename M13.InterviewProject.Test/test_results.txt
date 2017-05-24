@@ -6,27 +6,6 @@ Test run for C:\Users\w\Documents\programming\C#\M13\M13.InterviewProject.Test\b
 (с) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
 
 Запуск выполнения тестов; подождите...
-Не пройдено:  M13.InterviewProject.Test.ControllerTest.CanAddRuleToSite
-Сообщение об ошибке:
- Test method M13.InterviewProject.Test.ControllerTest.CanAddRuleToSite threw exception: 
-System.NullReferenceException: Object reference not set to an instance of an object.
-Трассировка стека:
-    at M13.InterviewProject.Test.ControllerTest.CanAddRuleToSite()
-
-Не пройдено:  M13.InterviewProject.Test.ControllerTest.CantAddIncorrectRuleToSite
-Сообщение об ошибке:
- Test method M13.InterviewProject.Test.ControllerTest.CantAddIncorrectRuleToSite threw exception: 
-System.NullReferenceException: Object reference not set to an instance of an object.
-Трассировка стека:
-    at M13.InterviewProject.Test.ControllerTest.CantAddIncorrectRuleToSite()
-
-Не пройдено:  M13.InterviewProject.Test.ControllerTest.TestRulesForAddedSite
-Сообщение об ошибке:
- Test method M13.InterviewProject.Test.ControllerTest.TestRulesForAddedSite threw exception: 
-System.NullReferenceException: Object reference not set to an instance of an object.
-Трассировка стека:
-    at M13.InterviewProject.Test.ControllerTest.TestRulesForAddedSite()
-
 Не пройдено:  M13.InterviewProject.Test.ControllerTest.TestRulesWhenNoSiteAdded
 Сообщение об ошибке:
  Test method M13.InterviewProject.Test.ControllerTest.TestRulesWhenNoSiteAdded threw exception: 
@@ -107,9 +86,107 @@ System.AggregateException: One or more errors occurred. ('\\ol' has an invalid t
    at M13.InterviewProject.Controllers.ValuesController.Test(String page, String rule)
    at M13.InterviewProject.Test.ControllerTest.TestIncorrectRulesForAddedSite()
 
+Не пройдено:  M13.InterviewProject.Test.ControllerTest.GetSpellErrorsFromUrlOfSite
+Сообщение об ошибке:
+ Test method M13.InterviewProject.Test.ControllerTest.GetSpellErrorsFromUrlOfSite threw exception: 
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (An error occurred while sending the request.)) ---> System.AggregateException: One or more errors occurred. (An error occurred while sending the request.) ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.Http.WinHttpException: Не удается разрешить имя или адрес сервера
+Трассировка стека:
+    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.Http.WinHttpHandler.<StartRequest>d__105.MoveNext()
+--- End of inner exception stack trace ---
+    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.Http.HttpClient.<FinishSendAsync>d__58.MoveNext()
+--- End of inner exception stack trace ---
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at M13.InterviewProject.Controllers.ValuesController.<>c__DisplayClass7_0.<SpellErrors>b__0(Task`1 t)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of inner exception stack trace ---
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at M13.InterviewProject.Controllers.ValuesController.SpellErrors(String page)
+   at M13.InterviewProject.Test.ControllerTest.GetSpellErrorsFromUrlOfSite()
 
-Всего тестов: 6. Пройдено: 0. Не пройдено: 6. Пропущено: 0.
+Не пройдено:  M13.InterviewProject.Test.ControllerTest.GetSpellErrorsFromUnreachableSite
+Сообщение об ошибке:
+ Test method M13.InterviewProject.Test.ControllerTest.GetSpellErrorsFromUnreachableSite threw exception: 
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (An error occurred while sending the request.)) ---> System.AggregateException: One or more errors occurred. (An error occurred while sending the request.) ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.Http.WinHttpException: Не удается разрешить имя или адрес сервера
+Трассировка стека:
+    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.Http.WinHttpHandler.<StartRequest>d__105.MoveNext()
+--- End of inner exception stack trace ---
+    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.Http.HttpClient.<FinishSendAsync>d__58.MoveNext()
+--- End of inner exception stack trace ---
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at M13.InterviewProject.Controllers.ValuesController.<>c__DisplayClass7_0.<SpellErrors>b__0(Task`1 t)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of inner exception stack trace ---
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at M13.InterviewProject.Controllers.ValuesController.SpellErrors(String page)
+   at M13.InterviewProject.Test.ControllerTest.GetSpellErrorsFromUnreachableSite()
+
+Не пройдено:  M13.InterviewProject.Test.ControllerTest.GetSpellErrorsFromNotAddedSite
+Сообщение об ошибке:
+ Test method M13.InterviewProject.Test.ControllerTest.GetSpellErrorsFromNotAddedSite threw exception: 
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (Error while copying content to a stream.)) ---> System.AggregateException: One or more errors occurred. (Error while copying content to a stream.) ---> System.Net.Http.HttpRequestException: Error while copying content to a stream. ---> System.IO.IOException: The read operation failed, see inner exception. ---> System.Net.Http.WinHttpException: Операция прервана
+Трассировка стека:
+    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.Http.StreamToStreamCopy.<CopyAsyncAnyStreamToAnyStreamCore>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.Http.HttpContent.<LoadIntoBufferAsyncCore>d__48.MoveNext()
+--- End of inner exception stack trace ---
+    at System.Net.Http.HttpContent.<LoadIntoBufferAsyncCore>d__48.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.Http.HttpClient.<FinishSendAsync>d__58.MoveNext()
+--- End of inner exception stack trace ---
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at M13.InterviewProject.Controllers.ValuesController.<>c__DisplayClass7_0.<SpellErrors>b__0(Task`1 t)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of inner exception stack trace ---
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at M13.InterviewProject.Controllers.ValuesController.SpellErrors(String page)
+   at M13.InterviewProject.Test.ControllerTest.GetSpellErrorsFromNotAddedSite()
+
+Не пройдено:  M13.InterviewProject.Test.ControllerTest.GetSpellErrorsFromIncorrectRule
+Сообщение об ошибке:
+ Test method M13.InterviewProject.Test.ControllerTest.GetSpellErrorsFromIncorrectRule threw exception: 
+System.AggregateException: One or more errors occurred. (';sdjfdshjf' has an invalid token.) ---> System.Xml.XPath.XPathException: ';sdjfdshjf' has an invalid token.
+Трассировка стека:
+    at MS.Internal.Xml.XPath.XPathScanner.NextLex()
+   at MS.Internal.Xml.XPath.XPathScanner..ctor(String xpathExpr)
+   at MS.Internal.Xml.XPath.XPathParser.ParseXPathExpression(String xpathExpression)
+   at System.Xml.XPath.XPathExpression.Compile(String xpath, IXmlNamespaceResolver nsResolver)
+   at System.Xml.XPath.XPathNavigator.Select(String xpath)
+   at HtmlAgilityPack.HtmlNode.SelectNodes(String xpath)
+   at M13.InterviewProject.Controllers.ValuesController.<>c__DisplayClass7_0.<SpellErrors>b__0(Task`1 t)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of inner exception stack trace ---
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at M13.InterviewProject.Controllers.ValuesController.SpellErrors(String page)
+   at M13.InterviewProject.Test.ControllerTest.GetSpellErrorsFromIncorrectRule()
+
+
+Всего тестов: 20. Пройдено: 13. Не пройдено: 7. Пропущено: 0.
 Сбой тестового запуска.
-Время выполнения теста: 5,6281 Секунды
+Время выполнения теста: 29,8450 Секунды
 
 
